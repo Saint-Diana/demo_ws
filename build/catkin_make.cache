@@ -1,0 +1,2 @@
+rosbag_node:sync_node:usb_cam
+-DCATKIN_DEVEL_PREFIX=/home/shenhuichang/workspace/ros/demo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shenhuichang/workspace/ros/demo_ws/install -G Unix Makefiles

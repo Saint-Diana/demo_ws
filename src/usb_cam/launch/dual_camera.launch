@@ -1,0 +1,13 @@
+<launch>
+  <node name="usb_cam1" pkg="usb_cam" type="usb_cam_node" output="screen">
+    <rosparam command="load" file="$(find usb_cam)/config/usb_cam_2.yml"/>
+    <!-- <param name="video_device" value="/dev/video2" /> -->
+    <!-- Add other camera parameters as needed -->
+  </node>
+
+  <node name="usb_cam2" pkg="usb_cam" type="usb_cam_node" output="screen">
+    <rosparam command="load" file="$(find usb_cam)/config/usb_cam_4.yml"/>
+    <!-- <param name="video_device" value="/dev/video4" /> -->
+    <!-- Add other camera parameters as needed -->
+  </node>
+</launch>

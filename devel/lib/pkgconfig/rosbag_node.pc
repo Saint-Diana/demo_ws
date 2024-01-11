@@ -1,0 +1,8 @@
+prefix=/home/shenhuichang/workspace/ros/demo_ws/devel
+
+Name: rosbag_node
+Description: Description of rosbag_node
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rosbag roscpp sensor_msgs
