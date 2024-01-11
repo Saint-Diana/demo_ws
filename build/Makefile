@@ -766,6 +766,19 @@ topic_tools_generate_messages_py/fast:
 .PHONY : topic_tools_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named camera_sync_node
+
+# Build rule for target.
+camera_sync_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_sync_node
+.PHONY : camera_sync_node
+
+# fast build rule for target.
+camera_sync_node/fast:
+	$(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/build
+.PHONY : camera_sync_node/fast
+
+#=============================================================================
 # Target rules for targets named usb_cam_node
 
 # Build rule for target.
@@ -863,6 +876,7 @@ help:
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... topic_tools_generate_messages_py"
+	@echo "... camera_sync_node"
 	@echo "... usb_cam_node"
 	@echo "... usb_cam"
 	@echo "... v4l_driver"

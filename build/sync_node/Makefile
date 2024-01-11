@@ -80,6 +80,28 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -113,28 +135,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/shenhuichang/workspace/ros/demo_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles /home/shenhuichang/workspace/ros/demo_ws/build/sync_node/CMakeFiles/progress.marks
@@ -167,6 +167,48 @@ depend:
 	cd /home/shenhuichang/workspace/ros/demo_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+sync_node/CMakeFiles/camera_sync_node.dir/rule:
+	cd /home/shenhuichang/workspace/ros/demo_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sync_node/CMakeFiles/camera_sync_node.dir/rule
+.PHONY : sync_node/CMakeFiles/camera_sync_node.dir/rule
+
+# Convenience name for target.
+camera_sync_node: sync_node/CMakeFiles/camera_sync_node.dir/rule
+
+.PHONY : camera_sync_node
+
+# fast build rule for target.
+camera_sync_node/fast:
+	cd /home/shenhuichang/workspace/ros/demo_ws/build && $(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/build
+.PHONY : camera_sync_node/fast
+
+src/camera_sync_node.o: src/camera_sync_node.cpp.o
+
+.PHONY : src/camera_sync_node.o
+
+# target to build an object file
+src/camera_sync_node.cpp.o:
+	cd /home/shenhuichang/workspace/ros/demo_ws/build && $(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/src/camera_sync_node.cpp.o
+.PHONY : src/camera_sync_node.cpp.o
+
+src/camera_sync_node.i: src/camera_sync_node.cpp.i
+
+.PHONY : src/camera_sync_node.i
+
+# target to preprocess a source file
+src/camera_sync_node.cpp.i:
+	cd /home/shenhuichang/workspace/ros/demo_ws/build && $(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/src/camera_sync_node.cpp.i
+.PHONY : src/camera_sync_node.cpp.i
+
+src/camera_sync_node.s: src/camera_sync_node.cpp.s
+
+.PHONY : src/camera_sync_node.s
+
+# target to generate assembly for a file
+src/camera_sync_node.cpp.s:
+	cd /home/shenhuichang/workspace/ros/demo_ws/build && $(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/src/camera_sync_node.cpp.s
+.PHONY : src/camera_sync_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -175,11 +217,15 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... test"
+	@echo "... camera_sync_node"
+	@echo "... src/camera_sync_node.o"
+	@echo "... src/camera_sync_node.i"
+	@echo "... src/camera_sync_node.s"
 .PHONY : help
 
 

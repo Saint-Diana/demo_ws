@@ -197,7 +197,7 @@ rosbag_node/clean: rosbag_node/CMakeFiles/topic_tools_generate_messages_py.dir/c
 # Directory level rules for directory sync_node
 
 # Recursive "all" directory target.
-sync_node/all:
+sync_node/all: sync_node/CMakeFiles/camera_sync_node.dir/all
 
 .PHONY : sync_node/all
 
@@ -207,7 +207,7 @@ sync_node/preinstall:
 .PHONY : sync_node/preinstall
 
 # Recursive "clean" directory target.
-sync_node/clean:
+sync_node/clean: sync_node/CMakeFiles/camera_sync_node.dir/clean
 
 .PHONY : sync_node/clean
 
@@ -376,7 +376,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -403,7 +403,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=3,4 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -430,7 +430,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -457,7 +457,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=7,8 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -673,7 +673,7 @@ rosbag_node/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
 rosbag_node/CMakeFiles/rosbag_play_node.dir/all:
 	$(MAKE) -f rosbag_node/CMakeFiles/rosbag_play_node.dir/build.make rosbag_node/CMakeFiles/rosbag_play_node.dir/depend
 	$(MAKE) -f rosbag_node/CMakeFiles/rosbag_play_node.dir/build.make rosbag_node/CMakeFiles/rosbag_play_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=9,10,11 "Built target rosbag_play_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=11,12,13 "Built target rosbag_play_node"
 .PHONY : rosbag_node/CMakeFiles/rosbag_play_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -997,7 +997,7 @@ rosbag_node/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
 rosbag_node/CMakeFiles/rosbag_record_node.dir/all:
 	$(MAKE) -f rosbag_node/CMakeFiles/rosbag_record_node.dir/build.make rosbag_node/CMakeFiles/rosbag_record_node.dir/depend
 	$(MAKE) -f rosbag_node/CMakeFiles/rosbag_record_node.dir/build.make rosbag_node/CMakeFiles/rosbag_record_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=12,13,14 "Built target rosbag_record_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=14,15,16 "Built target rosbag_record_node"
 .PHONY : rosbag_node/CMakeFiles/rosbag_record_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1477,6 +1477,33 @@ rosbag_node/CMakeFiles/topic_tools_generate_messages_py.dir/clean:
 .PHONY : rosbag_node/CMakeFiles/topic_tools_generate_messages_py.dir/clean
 
 #=============================================================================
+# Target rules for target sync_node/CMakeFiles/camera_sync_node.dir
+
+# All Build rule for target.
+sync_node/CMakeFiles/camera_sync_node.dir/all:
+	$(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/depend
+	$(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=1,2 "Built target camera_sync_node"
+.PHONY : sync_node/CMakeFiles/camera_sync_node.dir/all
+
+# Build rule for subdir invocation for target.
+sync_node/CMakeFiles/camera_sync_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 sync_node/CMakeFiles/camera_sync_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles 0
+.PHONY : sync_node/CMakeFiles/camera_sync_node.dir/rule
+
+# Convenience name for target.
+camera_sync_node: sync_node/CMakeFiles/camera_sync_node.dir/rule
+
+.PHONY : camera_sync_node
+
+# clean rule for target.
+sync_node/CMakeFiles/camera_sync_node.dir/clean:
+	$(MAKE) -f sync_node/CMakeFiles/camera_sync_node.dir/build.make sync_node/CMakeFiles/camera_sync_node.dir/clean
+.PHONY : sync_node/CMakeFiles/camera_sync_node.dir/clean
+
+#=============================================================================
 # Target rules for target usb_cam/CMakeFiles/usb_cam_node.dir
 
 # All Build rule for target.
@@ -1484,7 +1511,7 @@ usb_cam/CMakeFiles/usb_cam_node.dir/all: usb_cam/CMakeFiles/usb_cam.dir/all
 usb_cam/CMakeFiles/usb_cam_node.dir/all: usb_cam/CMakeFiles/v4l_driver.dir/all
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam_node.dir/build.make usb_cam/CMakeFiles/usb_cam_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=17,18 "Built target usb_cam_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=19,20 "Built target usb_cam_node"
 .PHONY : usb_cam/CMakeFiles/usb_cam_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1511,7 +1538,7 @@ usb_cam/CMakeFiles/usb_cam_node.dir/clean:
 usb_cam/CMakeFiles/usb_cam.dir/all: usb_cam/CMakeFiles/v4l_driver.dir/all
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/usb_cam.dir/build.make usb_cam/CMakeFiles/usb_cam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=15,16 "Built target usb_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=17,18 "Built target usb_cam"
 .PHONY : usb_cam/CMakeFiles/usb_cam.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1538,7 +1565,7 @@ usb_cam/CMakeFiles/usb_cam.dir/clean:
 usb_cam/CMakeFiles/v4l_driver.dir/all:
 	$(MAKE) -f usb_cam/CMakeFiles/v4l_driver.dir/build.make usb_cam/CMakeFiles/v4l_driver.dir/depend
 	$(MAKE) -f usb_cam/CMakeFiles/v4l_driver.dir/build.make usb_cam/CMakeFiles/v4l_driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=19,20,21,22 "Built target v4l_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shenhuichang/workspace/ros/demo_ws/build/CMakeFiles --progress-num=21,22,23,24 "Built target v4l_driver"
 .PHONY : usb_cam/CMakeFiles/v4l_driver.dir/all
 
 # Build rule for subdir invocation for target.

@@ -22,7 +22,7 @@ rosbag/view.h
 rosbag/player.h
 /home/shenhuichang/workspace/ros/demo_ws/src/rosbag_node/include/rosbag/player.h
 
-/home/shenhuichang/workspace/ros/demo_ws/src/rosbag_node/src/rosbag_utils.cpp
+/home/shenhuichang/workspace/ros/demo_ws/src/rosbag_node/src/rosbag_record_node.cpp
 rosbag_utils.h
 /home/shenhuichang/workspace/ros/demo_ws/src/rosbag_node/src/rosbag_utils.h
 

@@ -283,6 +283,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "rosbag_node/CMakeFiles/topic_tools_generate_messages_nodejs.dir/DependInfo.cmake"
   "rosbag_node/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake"
   "rosbag_node/CMakeFiles/topic_tools_generate_messages_py.dir/DependInfo.cmake"
+  "sync_node/CMakeFiles/camera_sync_node.dir/DependInfo.cmake"
   "usb_cam/CMakeFiles/usb_cam_node.dir/DependInfo.cmake"
   "usb_cam/CMakeFiles/usb_cam.dir/DependInfo.cmake"
   "usb_cam/CMakeFiles/v4l_driver.dir/DependInfo.cmake"
